@@ -1,0 +1,173 @@
+html, body {
+	height: 100%;
+}
+body {
+	margin: 0;
+	color: #505050;
+	min-width: 320px;
+	font: 14px/18px georgia, serif;
+    scroll-behavior: smooth;
+    background: #efeeee;
+}
+
+form, fieldset, ul, p {
+	margin: 0;
+	padding: 0;
+	border-style: none;
+	list-style: none;
+}
+img {
+	border-style: none;
+}
+input, select, textarea {
+	vertical-align: middle;
+	font: 100% arial, helvetica, sans-serif;
+}
+
+a {
+	color: #f00;
+	text-decoration: none;
+}
+h1, h2, h3, h4{
+	color: #333333;
+}
+p{
+	color: #a5a4a4;
+}
+a:hover {
+	text-decoration: none;
+}
+#main{
+	display: block;
+	max-width: 1250px;
+	margin: 0 auto;
+	padding: 30px 0;
+	background: #fff;
+	min-height: calc(100% - 60px);
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+.item{
+	display: flex;
+    flex-direction: column;
+    max-width: 270px;
+    border: 1px solid #e5e5e5;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 20px;
+}
+.item img{
+	border: 1px solid #e5e5e5;
+	position: relative;
+	top: -15px;
+	align-self: center;
+}
+.item .item-title{
+	font-size: 14px;
+	font-weight: bold;
+}
+.item .item-description{
+	font-size: 11px;
+}
+.row-container{
+	display: flex;
+    flex-direction: row;
+    
+}
+.cost-section{
+	padding: 20px 0;
+}
+.button-section{
+	justify-content: space-between;
+}
+.item-cost{
+	font-size: 25px;
+}
+.discount-cost{
+	color: red;
+	font-size: 17px;
+	position: relative;
+	line-height: 21px;
+	margin-left: 10px;
+}
+.discount-cost:before{
+	content: '';
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 1px;
+	background: red;
+	top: 50%;
+	left: 0;
+}
+.discount-lable, .new-lable{
+	position: absolute;
+	padding: 15px;
+	display: block;
+	text-transform: uppercase;
+	color: #fff;
+}
+.discount-lable{
+	background: red;
+	left: 10px;
+    top: 115px;
+
+}
+.new-lable{
+	background: #000;
+	right: 10px;
+    top: 115px;
+}
+.btn{
+	display: block;
+	border: 1px solid #e5e5e5;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 13px;
+	text-transform: uppercase;
+	text-align: center;
+	transition: 0.2s;
+}
+.btn.add{
+	color: red;
+	background: #fff;
+}
+.btn.add:hover{
+	background: #ed8e8e;
+}
+.btn.view{
+	background: #d9d9d9;
+	color: #999e9f;
+}
+.button-section .btn{
+	min-width: 45%;
+}
+.button-holder{
+	margin: 20px 0;
+	min-width: 100%;
+}
+.button-holder .btn{
+	width: 118px;
+	margin:  0 auto;
+	color: #e5e5e5;
+	background: #fff;
+}
+.preloader{
+	width: 40px;
+	height: 40px;
+	margin:  0 auto;
+	background: #000;
+	display: none;
+}
+.preloader.visible{
+	display: block;
+}
+.hidden{
+	display: none;
+}
